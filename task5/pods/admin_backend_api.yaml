@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: admin-back-end-api-app
+  namespace: default
+  labels:
+    role: admin-back-end-api
+spec:
+  containers:
+  - name: admin-back-end-api
+    image: nginx:latest
+    ports:
+    - containerPort: 80
